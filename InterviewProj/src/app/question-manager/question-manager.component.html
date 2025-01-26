@@ -1,0 +1,28 @@
+<div class="question-container" style="max-width: 600px; margin: auto; padding: 20px;">
+    <h1>Add Questions</h1>
+    <div *ngFor="let question of questions; let i = index" class="question-box">
+      <mat-form-field class="full-width" appearance="outline">
+        <textarea
+          matInput
+          placeholder="Enter your question (max 500 characters)"
+          maxlength="500"
+          [(ngModel)]="question.text"
+        ></textarea>
+      </mat-form-field>
+  
+      <button mat-icon-button color="primary" (click)="addQuestion()" *ngIf="i === questions.length - 1">
+        <mat-icon>add</mat-icon>
+      </button>
+      
+      <!-- Remove button, visible from the second question onwards -->
+      <button mat-icon-button color="warn" (click)="removeQuestion(i)" *ngIf="i > 0">
+        <mat-icon>remove</mat-icon>
+      </button>
+    </div>
+      <!-- Action Buttons: Save and Cancel -->
+      <div class="action-buttons">
+        <button mat-raised-button color="primary" (click)="saveQuestions()">Save</button>
+        <button mat-raised-button color="warn" (click)="cancelChanges()">Cancel</button>
+      </div>
+  </div>
+  

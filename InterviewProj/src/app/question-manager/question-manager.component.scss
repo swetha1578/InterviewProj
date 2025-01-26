@@ -1,0 +1,26 @@
+.question-container {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  
+    h1 {
+      text-align: center;
+    }
+  
+    .question-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+  
+      textarea {
+        flex: 1;
+      }
+    }
+  
+    .action-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
