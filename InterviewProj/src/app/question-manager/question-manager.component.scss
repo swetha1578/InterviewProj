@@ -4,7 +4,7 @@
     padding: 20px;
   
     h1 {
-      text-align: center;
+      text-align: left;
     }
   
     .question-box {
@@ -19,8 +19,8 @@
       }
   
       textarea {
-        width: 100%; // Ensure the textarea fills the `mat-form-field`
-        min-height: 80px; // Adjust height as needed
+        width: 80%; // Ensure the textarea fills the `mat-form-field`
+        min-height: 50px; // Adjust height as needed
         resize: none; // Prevent manual resizing (optional)
       }
     }
