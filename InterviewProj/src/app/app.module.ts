@@ -19,13 +19,14 @@ import { AppComponent } from './app.component';
 import { QuestionManagerComponent } from './question-manager/question-manager.component';
 import { FetchQuestionsComponent } from './fetch-questions/fetch-questions.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 // Define the routes
 const routes: Routes = [
   { path: '', component: QuestionManagerComponent }, // Set QuestionManager as the default route (home screen)
   { path: 'fetch-questions', component: FetchQuestionsComponent }, 
   { path: 'login', component: LoginComponent }, 
-
+  { path: 'signup', component: SignupComponent }, 
   // other routes can go here
 ];
 
@@ -34,7 +35,8 @@ const routes: Routes = [
     AppComponent,
     QuestionManagerComponent,
     FetchQuestionsComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

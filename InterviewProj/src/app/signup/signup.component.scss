@@ -1,0 +1,25 @@
+.signup-container {
+    max-width: 400px; // Set a reasonable width for the form
+    margin: 0 auto;// Center the form on the page
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    // Styling for each form field
+    mat-form-field {
+      width: 100%; // Ensure each field takes the full width of the container
+      margin-bottom: 6px; // Add some space between fields
+    }
+  
+    button {
+      margin-top: 15px; // Add space above the submit button
+      width: 100%; // Make the button take full width
+    }
+  
+    // Optionally style mat-error messages
+    mat-error {
+      color: red; // Change error message color to red
+    }
+  }
+  
