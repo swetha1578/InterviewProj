@@ -12,15 +12,20 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select'; // For mat-select
 import { MatDatepickerModule } from '@angular/material/datepicker'; // For mat-datepicker
 import { MatNativeDateModule } from '@angular/material/core'; // For native date adapter (used with mat-datepicker)
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatCardModule } from '@angular/material/card'; 
 
 import { AppComponent } from './app.component';
 import { QuestionManagerComponent } from './question-manager/question-manager.component';
 import { FetchQuestionsComponent } from './fetch-questions/fetch-questions.component';
+import { LoginComponent } from './login/login.component';
 
 // Define the routes
 const routes: Routes = [
   { path: '', component: QuestionManagerComponent }, // Set QuestionManager as the default route (home screen)
   { path: 'fetch-questions', component: FetchQuestionsComponent }, 
+  { path: 'login', component: LoginComponent }, 
+
   // other routes can go here
 ];
 
@@ -28,7 +33,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     QuestionManagerComponent,
-    FetchQuestionsComponent
+    FetchQuestionsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +48,9 @@ const routes: Routes = [
     MatFormFieldModule,
     MatSelectModule, // Add this for mat-select
     MatDatepickerModule, // Add this for mat-datepicker
-    MatNativeDateModule // Add this for date functionality in mat-datepicker
+    MatNativeDateModule, // Add this for date functionality in mat-datepicker
+    ReactiveFormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
