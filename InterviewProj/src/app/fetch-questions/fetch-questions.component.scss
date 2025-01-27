@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px; /* Adds space from the top of the page */
+    margin-bottom: 20px; /* Space between filter section and table */
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  
+  .filter-container mat-form-field {
+    width: 100%;
+    max-width: 250px; /* Max width for each input field */
+  }
+  
+  .table-container {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  mat-header-cell, mat-cell {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  mat-header-cell {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+  
+  mat-row {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  button {
+    margin-right: 8px;
+  }
+  
+  /* Adjust the button alignment inside the filter-container */
+  .filter-container button {
+    margin-top: 10px;
+  }
+  
